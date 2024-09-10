@@ -1,0 +1,16 @@
+// manifest.json
+{
+  "manifest_version": 2,
+  "name": "Dynamic Price Calculator Autofill",
+  "version": "1.0",
+  "description": "Automatically fills in values for the dynamically loaded price calculator",
+  "permissions": [
+    "https://app.roposoclout.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://app.roposoclout.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

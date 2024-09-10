@@ -1,0 +1,21 @@
+// manifest.json
+{
+  "manifest_version": 2,
+  "name": "Price Calculator Autofill",
+  "version": "1.0",
+  "description": "Automatically fills in values for the price calculator",
+  "permissions": [
+    "https://app.roposoclout.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://app.roposoclout.com/product/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "price-calculator-autofill@example.com"
+    }
+  }
+}
